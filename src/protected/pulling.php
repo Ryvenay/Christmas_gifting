@@ -9,7 +9,7 @@
         }
 
         if($success > 0 && $success != false) {
-            $pulledUser = getUserById($success);
+            $pulledUser = getUserById(getPullById($success)['huzott_id']);
             $_SESSION['pulled'] = $pulledUser['id'];
         }
     }

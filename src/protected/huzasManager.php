@@ -35,7 +35,7 @@ function pullUser($uid) {
     ];
     require_once DATABASE_CONTROLLER;
 
-    $users = getList($query);
+    $users = getList($query, $params);
 
     if(count($users) == 0) {
         return false;
@@ -74,4 +74,16 @@ function pullUserWithoutId() {
     $success = executeDML($query, $params);
 
     return $success;
+}
+
+function getPullById($id) {
+    $query = "SELECT * FROM huzasok WHERE id = :id";
+    $params = [
+        ':id' => $id
+    ];
+
+    require_once DATABASE_CONTROLLER;
+    $record = getRecord($query, $params);
+
+    return $record;
 }
