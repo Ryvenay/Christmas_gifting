@@ -1,11 +1,22 @@
 <?php 
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add'])) 
     {
-        require_once PROTECTED_DIR."huzasManager.php";
-
-        $success = insertSubmission($_POST['name']);
+        if(empty($_POST['name'])) {
+            $success = -1;
+        }
+        else {
+            require_once PROTECTED_DIR."huzasManager.php";
+            $success = insertSubmission($_POST['name']);
+        }
+        
     }
 ?>
+
+<?php if(isset($success) && $success == -1): ?>
+    <div class="alert alert-danger" role="alert">
+        Add meg a neved!
+    </div>
+<?php endif; ?>
 
 
 <?php if(isset($success) && $success > 0): ?>
