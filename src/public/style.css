@@ -184,3 +184,8 @@ footer .GHIcon {
     max-width: 50px;
     max-height: 50px;
 }
+
+.successfulSignupAlert {
+    text-align: center;
+    margin-bottom: 40px;
+}

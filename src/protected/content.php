@@ -26,8 +26,11 @@
 
         <?php else: ?>
             <?php if(array_key_exists('id', $_SESSION)): ?>
-                <h2>Köszönjük a jelentkezést <?=getUserById($_SESSION['id'])['name']; ?></h2>
-                <h3>A húzásra hamarosan sor kerül</h3>
+                <div class="successfulSignupAlert">
+                    <h2>Köszönjük a jelentkezést <?=getUserById($_SESSION['id'])['name']; ?></h2>
+                    <h3>A húzásra hamarosan sor kerül</h3>
+                </div>
+                
             <?php else: ?>
                 <?php require_once PROTECTED_DIR."signup.php"; ?>
             <?php endif; ?>
