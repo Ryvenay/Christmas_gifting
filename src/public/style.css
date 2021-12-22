@@ -115,8 +115,7 @@ footer {
     margin-bottom: 20px;
 }
 
-
-.rules .col-md-4 {
+.rules .col-md-6 {
     padding: 15px 15px 15px 15px;
     margin-bottom: 20px;
 }
@@ -129,12 +128,12 @@ footer {
     box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.14);
     padding: 45px 51px 69px 51px;
     border: none;
-    min-height: 400px;
+    height: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .card {
-        padding: 10px 20px 25px 10px;
+        padding: 10px 20px 25px 20px;
     }
 }
 
@@ -188,4 +187,121 @@ footer .GHIcon {
 .successfulSignupAlert {
     text-align: center;
     margin-bottom: 40px;
+}
+
+
+.snowflake {
+    position: absolute;
+    display: block;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.snowflake img {
+
+
+}
+
+.snowflake1 {
+    animation-name: fall1;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    top: -100px;
+    left: 30%;
+}
+
+.snowflake2 {
+    animation-name: fall2;
+    animation-duration: 30s;
+    animation-delay: 8s;
+    top: -100px;
+    left: 60%;
+}
+
+
+.snowflake3 {
+    animation-name: fall3;
+    animation-duration: 20s;
+    animation-delay: 12s;
+    top: -120px;
+    left: 50%;
+}
+
+
+.snowflake4 {
+    animation-name: fall4;
+    animation-duration: 25s;
+    animation-delay: 20s;
+    top: -120px;
+    left: 10%;
+}
+
+.snowflake5 {
+    animation-name: fall5;
+    animation-duration: 25s;
+    animation-delay: 16s;
+    top: -120px;
+    left: 90%;
+    display: none;
+}
+
+
+.snowflake6 {
+    animation-name: fall5;
+    animation-duration: 25s;
+    animation-delay: 16s;
+    top: -120px;
+    left: 90%;
+}
+
+
+.snowflake7 {
+    animation-name: fall5;
+    animation-duration: 25s;
+    animation-delay: 16s;
+    top: -120px;
+    left: 90%;
+    display: none;
+}
+
+
+
+
+
+@keyframes fall1 {
+    0%   {top: -5%; left: 30%;}
+    25% {top: 25%; left: 28%;}
+    50%   {top: 50%; left: 30%;}
+    75%   {top: 75%; left: 31%;}
+    100% {top: 100%; left: 32%;}
+}
+
+@keyframes fall2 {
+    0%   {top: -5%; left: 60%;}
+    25% {top: 25%; left: 62%;}
+    50%   {top: 50%; left: 60%;}
+    100% {top: 100%; left: 58%;}
+}
+
+
+@keyframes fall3 {
+    0%   {top: -5%; left: 50%;}
+    30% {top: 30%; left: 52%;}
+    50%   {top: 50%; left: 50%;}
+    100% {top: 100%; left: 52%;}
+}
+
+@keyframes fall4 {
+    0%   {top: -5%; left: 15%;}
+    10% {top: 10%; left: 16%;}
+    50%   {top: 50%; left: 15%;}
+    100% {top: 100%; left: 2%;}
+}
+
+@keyframes fall5 {
+    0%   {top: -5%; left: 90%;}
+    10% {top: 10%; left: 87%;}
+    50%   {top: 50%; left: 88%;}
+    100% {top: 100%; left: 90%;}
 }

@@ -2,14 +2,14 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['pull'])) {
         require_once PROTECTED_DIR."huzasManager.php";
         if(array_key_exists('id', $_SESSION)){
-            $success = pullUser($_SESSION['id']);
+            $pullSuccess = pullUser($_SESSION['id']);
         }
         else {
-            $success = pullUserWithoutId();
+            $pullSuccess = pullUserWithoutId();
         }
 
-        if($success > 0 && $success != false) {
-            $pulledUser = getUserById(getPullById($success)['huzott_id']);
+        if($pullSuccess > 0 && $pullSuccess != false) {
+            $pulledUser = getUserById(getPullById($pullSuccess)['huzott_id']);
             $_SESSION['pulled'] = $pulledUser['id'];
         }
     }
@@ -33,7 +33,7 @@
     </div>
     
 <?php else: ?>
-    <?php if(isset($success) && $success ==false ): ?>
+    <?php if(isset($pullSuccess) && $pullSuccess ==false ): ?>
         <div class="alert alert-danger" role="alert">
             Hiba történt. Lehetséges hogy még nincs elég jelentkező, próbáld újra később.
         </div>

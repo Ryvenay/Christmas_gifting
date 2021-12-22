@@ -1,3 +1,27 @@
+<div class="snowflake1 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-1.png">
+        </div>
+        <div class="snowflake2 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-2.png">
+        </div>
+        <div class="snowflake3 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-3.png">
+        </div>
+        <div class="snowflake4 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-4.png">
+        </div>
+        <div class="snowflake5 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-5.png">
+        </div>
+        <div class="snowflake6 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-6.png">
+        </div>
+        <div class="snowflake7 snowflake">
+            <img src="https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/snowflake-7.png">
+        </div>
+
+
+
 
 <div class="hero">
     
@@ -6,12 +30,14 @@
             <div class="jet-parallax-section__image" style="background-size: contain; background-position: 50% 127%; background-image: url(&quot;https://ld-wp73.template-help.com/wordpress/prod_21235/v1/wp-content/uploads/2018/11/home-bg-px-1.png&quot;); transform: translateY(-34.2px);"></div>
         </div>
         <div class="trees"></div>
+    
+
         <div class="title-block">
-        <div class="green-stuff">
-            <img src="<?=PUBLIC_DIR.'home-image-1.png'; ?>" class="image1" >
+            <div class="green-stuff">
+                <img src="<?=PUBLIC_DIR.'home-image-1.png'; ?>" class="image1" >
+            </div>
+            <h1>Huzogatós</h1>
         </div>
-        <h1>Huzogatós</h1>
-    </div>
     </div>
     
 </div>
@@ -42,7 +68,7 @@
         <div class="rules">
             <h1>Szabályok</h1>
             <div class="row">
-                <div class="col col-md-4 col-sm-6 col-12">
+                <div class="col col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card rule">
                         <div class="card-body">
                             <h5 class="card-title">Ajándékozási kötelezettség</h5>
@@ -51,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-sm-6 col-12">
+                <div class="col col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card rule" >
                         <div class="card-body">
                             <h5 class="card-title">Ár/Érték</h5>
@@ -60,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-sm-6 col-12">
+                <div class="col col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card rule">
                         <div class="card-body">
                             <h5 class="card-title">Fontos szabály</h5>
